@@ -1,0 +1,47 @@
+.logo {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-rich);
+    span{
+        color: var(--blue-main)
+    }
+    &:hover {
+        color: var(--black-rich);
+    span{
+        color: var(--blue-main)
+    }
+    }
+}
+
+.logoDiv {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartDiv {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.searchBox {
+    display: flex;
+    padding: 0rem;
+    align-items: center;
+    input {
+        border: 1px solid var(--gray-light);
+        border-radius: 10px;
+        padding: 0.3rem;
+        padding-left: 2rem;
+        width: 30rem;
+        z-index: 1;
+    }
+    
+   
+}

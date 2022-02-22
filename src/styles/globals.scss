@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-main: #1071FF;
+  --blue-yale:  #004796;
+  --blue-denim: #0E5DC1;
+  --blue-azure: #2580FF;
+  --blue-cornflower: #629CFF;
+
+  --orange-internacional: #FF4E00;
+  --orange-pumpkin: #FF7E27;
+  --orange-mango: #FF924A;
+  --orange-rajah: #FFAD5F;
+
+  --green-bright: #00893A;
+
+  --red-extreme: #F52F2F;
+
+  --black-rich: #0C0C0C;
+
+  --gray-onyx: #434447;
+  --gray-spanish: #737B7D;
+  --gray-light: #CFD2D5;
+
+  --platinum1: #EAECEE;
+  --platinum2: #F6F8FB;
+}
+
+body {
+ 
+  font-family:  Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@media (max-width: 1120px) {
+  html { 
+      font-size: 97.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+      font-size: 87.5%;
+  }
+
+}
