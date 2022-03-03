@@ -67,7 +67,7 @@ export function Footer() {
                 <FooterSection title={'Institucional'} content={footerConstants.institucional} />
             </div>
             <div className={styles.endFooter}>
-                <p>Shopnow S.A.|Rua  Klein, n° 83|São Caetano do Sul - SP|CEP: 09510-125|CNPJ: 33.041.260/0652-90|Inscrição Estadual: 636.169.915.112|Telefone: (11) 4003-3383</p>
+                <p>Shopnow S.A.|Faria Lima, n° 123|São Paulo - SP|CEP: 12345-123|CNPJ: 00.111.222/3333-44|Inscrição Estadual: 636.159.325.111|Telefone: (10) 9999-9999</p>
             </div>
         </div>
     )
