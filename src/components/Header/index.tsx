@@ -18,8 +18,8 @@ export function Header() {
                 <input type="text"/>
             </div>
             <div className={styles.cartDiv}>
-                Carrinho
                 <AiOutlineShoppingCart/>
+                Cart
             </div>
         </div>
         <NavBar />

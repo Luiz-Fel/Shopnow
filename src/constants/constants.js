@@ -1,24 +1,24 @@
 export const footerConstants = {
-    duvidas : [
-        'Atendimento', 
-        'Trocas e devoluções',
-        'Política de privacidade',
+    orderAndPurchase : [
+        'Check Order Status',
+        'Return & Exchanges',
+        'Product Recalls', 
+        'Privacy',
         'Marketplace',
-        'Processo de entrega'
+
 
             ],
-    serviços : [
-        'Lista de presentes',
-        'Entrega agendada',
-        'Móveis planejados',
-        'Vale presente',
-        'Para empresas',
+    services : [
+        'Visitor Services',
+        'Schedule a service',
+        'Gift Cards',
+        'Contact Us',
     ],
     institucional : [
-        'Conheça a Shopnow',
-        'Sobre a Shopnow',
-        'Trabalhe conosco',
-        'Nossas lojas',
-        'Venda seus produtos na Shopnow'
+        'Shipping and Delivery',
+        'About Shopnow',
+        'Jobs',
+        'Find a Store',
+        'Tell Us What you Think'
     ]
 }

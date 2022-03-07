@@ -18,22 +18,22 @@ export function NavBar() {
             <Container>
                 <Navbar.Collapse className="d-flex justify-content-between">
                     <Nav >
-                            <Nav.Link href="" className="text-gray-900" >Eletrônicos</Nav.Link>
-                            <Nav.Link href="">Computadores</Nav.Link>
-                            <Nav.Link href="">Cozinha</Nav.Link>
-                            <Nav.Link href="">Esportes</Nav.Link>
-                            <Nav.Link href="">Livros</Nav.Link>
+                            <Nav.Link href="" className="text-gray-900" >Eletronics</Nav.Link>
+                            <Nav.Link href="">Computers</Nav.Link>
+                            <Nav.Link href="">Home and Kitchen</Nav.Link>
+                            <Nav.Link href="">Sports</Nav.Link>
+                            <Nav.Link href="">Books</Nav.Link>
                         
                     </Nav>
                     <Nav>
-                        <Nav.Link href="" onClick={handleShow}>Entre com sua conta</Nav.Link>
+                        <Nav.Link href="" onClick={handleShow}>Account</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
         <Modal
         show={show}>
-            <Modal.Header>Título</Modal.Header>
+            <Modal.Header>Title</Modal.Header>
             <Button variant="secondary" onClick={handleShow}>
                 Close
           </Button>
