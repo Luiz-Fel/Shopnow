@@ -3,7 +3,7 @@
     padding: 1rem;
     padding-left: 5.5rem;
     padding-right: 5.5rem;
-    height: 8.75rem;
+    height: 10.75rem;
     display: flex;
     align-items: center;
     
@@ -15,17 +15,16 @@
     color: white;
     .productPercentage {
         display: flex;
-        align-items: center;
         gap: 1rem;
         h2 {
-            
-            font-size: 3rem;
+            line-height:3.75rem;
+            font-size: 5rem;
             font-weight: 900;
         }
         span {
+            line-height:3.75rem;
             font-weight: 700;
-            font-size: 2.2rem;
-            padding-bottom: 0.7rem;
+            font-size: 2.875rem;
         }
     }
         align-items: center;
