@@ -21,7 +21,7 @@ export function Footer() {
             <div className={styles.footerLinks}>
                 <div>
 
-                <p>Formas de pagamento</p>
+                <p>Payment Methods</p>
                     <div className={styles.paymentSection}>
                         <Image className={styles.paymentMethods} src={visa} />
                         <Image className={styles.paymentMethods} src={mastercard}/>

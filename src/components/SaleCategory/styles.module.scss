@@ -1,0 +1,55 @@
+.saleCategory {
+    background-color: var(--blue-main);
+    padding: 1rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    height: 8.75rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.productSection {
+    gap: 2rem;
+    display: flex;
+    color: white;
+    .productPercentage {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        h2 {
+            
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        span {
+            font-weight: 700;
+            font-size: 2.2rem;
+            padding-bottom: 0.7rem;
+        }
+    }
+        align-items: center;
+    display: flex;
+    margin-right: auto;
+}
+
+.productImg {
+    height: 8rem;
+}
+
+
+.button {
+    background-color: white;
+    color: var(--blue-main);
+    font-weight: 600;
+    border: transparent;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: 0.2s;
+    &:hover {
+        color: white;
+        background-color:var(--blue-yale);
+    }
+}

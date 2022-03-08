@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { CardsSection } from '../components/CardsSection'
+import { SalesSection } from '../components/SalesSection'
 import HomePageCarousel from '../components/HomePageCarousel'
+import { SaleCategory } from '../components/SaleCategory'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <>
       <HomePageCarousel />
-      <CardsSection />
+      <SalesSection />
+      <SaleCategory />
     </>
   )
 }
