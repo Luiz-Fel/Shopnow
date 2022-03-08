@@ -1,3 +1,4 @@
+import { Button } from '../Button'
 import styles from './styles.module.scss'
 
 export function SaleCategory() {
@@ -13,7 +14,7 @@ export function SaleCategory() {
                     <span>on books</span>
                 </div>
             </div>
-            <button className={styles.button}>Check offer</button>
+            <Button lightTheme={true}>Check offer</Button>
         </div>
         </>
     )
