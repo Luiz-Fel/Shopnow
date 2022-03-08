@@ -5,6 +5,7 @@ import furnitune from '../../../public/images/furnitune.png'
 import tools from '../../../public/images/tools2.png'
 import kitchen from '../../../public/images/kitchen.png'
 import { Button } from '../Button'
+import Link from 'next/link'
 
 export function OthersSection() {
     return(
@@ -19,19 +20,31 @@ export function OthersSection() {
             </div>
             <div className={styles.newSection}>
                 <div className={styles.newComponentsSection}>
-                    <div className={styles.newComponent}>
+                    <Link href={""}>
+                        <a>
+                            <div className={styles.newComponent}>
 
-                        <p className={styles.text}>New furniture bundles!</p>
-                        <Image src={furnitune}  width={204} height={239} />
-                    </div>
-                    <div className={styles.newComponent}>
-                        <p className={styles.text}>Check out the <br /> new kitchen section</p>
-                        <Image src={kitchen} width={204} height={252.9} />
-                    </div>
-                    <div className={styles.newComponent}>
-                        <p className={styles.text}>New iPhone <br /> now available!</p>
-                        <Image src={iphone} width={204} height={252.9} />
-                    </div>
+                                <p className={styles.text}>New furniture bundles!</p>
+                                <Image src={furnitune}  width={204} height={239} />
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href={""}>
+                        <a>
+                            <div className={styles.newComponent}>
+                                <p className={styles.text}>Check out the <br /> new kitchen section</p>
+                                <Image src={kitchen} width={204} height={252.9} />
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href={""}>
+                        <a>
+                            <div className={styles.newComponent}>
+                                <p className={styles.text}>New iPhone <br /> now available!</p>
+                                <Image src={iphone} width={204} height={252.9} />
+                            </div>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
-import { Button, Card } from "react-bootstrap";
+import {  Card } from "react-bootstrap";
+import { Button } from "../Button";
 
 interface ProductProps {
     id: number,
@@ -14,21 +15,25 @@ interface ProductProps {
 
 
 export function Product({id, stock, title, isSales, price, salePrice, imageUrl, description} : ProductProps) {
-    return(
-    <Card style={{ width: '15rem' }}>
-    <Card.Img variant="top" src={imageUrl} style={{ width: '12rem',
-    padding: '1rem', 
-    marginRight: 'auto',
-    marginLeft: 'auto',}}/>
-    <Card.Body>
-      <Card.Title style={{ fontSize: '1.125rem'}}>{title}</Card.Title>
-      <Card.Text style={{ fontSize: '1.25rem'}}>
-        {salePrice}
-      </Card.Text>
-      <Card.Text style={{ fontSize: '1.25rem'}}>
-        {price}
-      </Card.Text>
-      <Button variant="primary">Add to cart</Button>
-    </Card.Body>
-  </Card>)
+    
+
+     
+        return(
+        <Card style={{ width: '15rem' }}>
+        <Card.Img variant="top" src={imageUrl} style={{ width: '12rem',
+        padding: '1rem', 
+        marginRight: 'auto',
+        marginLeft: 'auto',}}/>
+        <Card.Body>
+          <Card.Title style={{ fontSize: '1.125rem'}}>{title}</Card.Title>
+          <Card.Text style={{ fontSize: '1.25rem'}}>
+            {salePrice}
+          </Card.Text>
+          <Card.Text style={{ fontSize: '1.25rem'}}>
+            {price}
+          </Card.Text>
+          <Button lightTheme={false} style={{marginTop: 'auto'}}>Add to cart</Button>
+        </Card.Body>
+      </Card>
+      )
 }
