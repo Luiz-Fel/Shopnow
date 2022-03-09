@@ -33,6 +33,15 @@
 body {
  
   font-family:  Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  .titleSection {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
 }
 
 button {
@@ -43,6 +52,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h2 {
+  font-weight: bold;
+}
+
+  
 
 
 @media (max-width: 1120px) {

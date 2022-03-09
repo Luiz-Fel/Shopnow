@@ -5,11 +5,22 @@ import "swiper/css/navigation";
 import styles from './styles.module.scss'
 
 import { Product } from '../Product';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import Link from 'next/link';
 
 export function Recommended() {
     return(
         <div className={styles.recommended}>
-            <h3>Recommended Products</h3>
+             <div className={styles.titleSection}>
+            <h2 className={styles.title}>Recommended Products</h2>
+            <div>
+                <Link href={''}>
+                <a className={styles.link}>
+                    <p>See all recommended products <AiOutlineArrowRight /></p>
+                </a>
+                </Link>
+            </div>
+        </div>
             <br />
             <Swiper
             modules={[Navigation]}

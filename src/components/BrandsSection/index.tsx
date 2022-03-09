@@ -4,12 +4,22 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import Link from 'next/link';
 import styles from './styles.module.scss'
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 
 export function BrandsSection() {
     return(
         <>
-        <h2>Our Brands</h2>
+         <div className={styles.titleSection}>
+            <h2 className={styles.title}>Our Brands</h2>
+            <div>
+                <Link href={''}>
+                <a className={styles.link}>
+                    <p>Show all brands <AiOutlineArrowRight /></p>
+                </a>
+                </Link>
+            </div>
+        </div>
         <Swiper
          className={styles.swiper}
             modules={[Navigation]}
