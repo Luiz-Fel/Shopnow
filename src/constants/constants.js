@@ -1,3 +1,5 @@
+
+
 export const footerConstants = {
     orderAndPurchase : [
         'Check Order Status',
@@ -69,4 +71,39 @@ export const sales = [
         imageUrl: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462308_sd.jpg;maxHeight=640;maxWidth=550",
         description: 'Prepare yourself for an experience that will change the way you view entertainment. The Pioneer PN50951-22U 50" Class LED 4K UHD Smart Fire TV is equipped with 4K Ultra HD and High Dynamic Range, delivering stunning results that enhance your favorite TV shows, movies, sports and more. Dolby Vision boosts your viewing experience by delivering improved picture quality with detailed images.'
     },
+]
+
+export const hints = [
+    {
+        id: 1,
+        title: 'How much does it cost to finish an apartment ?',
+        imageUrl: 'https://images.pexels.com/photos/4569340/pexels-photo-4569340.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        alternative: 'a family unboxing the furnitune after they moved.',
+        resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, ante fringilla vulputate interdum, mi lorem fringilla orci, a laoreet leo risus vel nibh.',
+        link: '',
+    },
+    {
+        id: 2,
+        title: 'How much does it cost to finish an apartment',
+        imageUrl: 'https://images.pexels.com/photos/4569340/pexels-photo-4569340.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        alternative: 'a family unboxing the furnitune after they moved.',
+        resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, ante fringilla vulputate interdum, mi lorem fringilla orci, a laoreet leo risus vel nibh.',
+        link: '',
+    },
+    {
+        id: 3,
+        title: 'How much does it cost to finish an apartment',
+        imageUrl: 'https://images.pexels.com/photos/4569340/pexels-photo-4569340.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        alternative: 'a family unboxing the furnitune after they moved.',
+        resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, ante fringilla vulputate interdum, mi lorem fringilla orci, a laoreet leo risus vel nibh.',
+        link: '',
+    },
+    {
+        id: 4,
+        title: 'How much does it cost to finish an apartment',
+        imageUrl: 'https://images.pexels.com/photos/4569340/pexels-photo-4569340.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        alternative: 'a family unboxing the furnitune after they moved.',
+        resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, ante fringilla vulputate interdum, mi lorem fringilla orci, a laoreet leo risus vel nibh.',
+        link: '',
+    },    
 ]
