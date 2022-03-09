@@ -1,7 +1,6 @@
-import Link from "next/link";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { sales } from "../../constants/constants";
 import { SaleProduct } from "../SaleProduct";
+import { TitleSection } from "../TitleSection";
 import styles from './styles.module.scss'
 
 
@@ -9,16 +8,7 @@ import styles from './styles.module.scss'
 export function SalesSection() {
     return (
     <>
-    <div className={styles.titleSection}>
-            <h2 className={styles.title}>Today's sales</h2>
-            <div>
-                <Link href={''}>
-                <a className={styles.link}>
-                    <p>See all sales <AiOutlineArrowRight /></p>
-                </a>
-                </Link>
-            </div>
-        </div>
+        <TitleSection title="Today's sales" link='See all sales' url=''  />
         <div className={styles.SalesSection}>
             {sales.map(({id, stock, title, isSales, salePrice,  price, discount, imageUrl}) => {
                 return(

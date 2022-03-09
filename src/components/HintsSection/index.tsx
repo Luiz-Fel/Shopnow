@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from './styles.module.scss'
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { TitleSection } from "../TitleSection";
 
 
 interface HintsSectionProps  {
@@ -18,16 +19,7 @@ interface HintsSectionProps  {
 export function HintsSection({ hints } : HintsSectionProps) {
 
     return(<>
-        <div className={styles.titleSection}>
-            <h2 className={styles.title}>Hints for you</h2>
-            <div>
-                <Link href={''}>
-                <a className={styles.link}>
-                    <p>Show all hints <AiOutlineArrowRight /></p>
-                </a>
-                </Link>
-            </div>
-        </div>
+        <TitleSection title='Hints for you' link='See all hints' url=''  />
         <div className={styles.hints}>
         { 
                 hints.map((current) => {

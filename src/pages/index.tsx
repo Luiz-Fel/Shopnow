@@ -1,7 +1,7 @@
 import { SalesSection } from '../components/SalesSection'
 import HomePageCarousel from '../components/HomePageCarousel'
 import { SaleCategory } from '../components/SaleCategory'
-import { Recommended } from '../components/Recommended'
+import { RecommendedProducts } from '../components/RecommendedProducts'
 import { OthersSection } from '../components/OthersSection'
 import { BrandsSection } from '../components/BrandsSection'
 import { HintsSection } from '../components/HintsSection'
@@ -13,7 +13,7 @@ export default function Home() {
       <HomePageCarousel />
       <SalesSection />
       <SaleCategory />
-      <Recommended />
+      <RecommendedProducts />
       <OthersSection />
       <BrandsSection />
       <HintsSection hints={hints} />
