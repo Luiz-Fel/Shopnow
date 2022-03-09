@@ -5,7 +5,8 @@ import { RecommendedProducts } from '../components/RecommendedProducts'
 import { OthersSection } from '../components/OthersSection'
 import { BrandsSection } from '../components/BrandsSection'
 import { HintsSection } from '../components/HintsSection'
-import { hints } from '../constants/constants'
+import { hints, recommendedCategories } from '../constants/constants'
+import { RecommendedCategories } from '../components/RecommendedCategories'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <RecommendedProducts />
       <OthersSection />
       <BrandsSection />
+      <RecommendedCategories categories={recommendedCategories} />
       <HintsSection hints={hints} />
     </>
   )

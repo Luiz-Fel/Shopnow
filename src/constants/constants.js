@@ -107,3 +107,39 @@ export const hints = [
         link: '',
     },    
 ]
+
+
+export const recommendedCategories  = [
+    {
+        id: 1,
+        imageUrl:'https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        imageAlt: 'a living room with furniture',
+        categoryLink: '',
+        categoryName: 'Furniture',
+        
+    },
+    {
+        id: 1,
+        imageUrl:'https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        imageAlt: 'a living room with furniture',
+        categoryLink: '',
+        categoryName: 'Furniture',
+        
+    },
+    {
+        id: 1,
+        imageUrl:'https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        imageAlt: 'a living room with furniture',
+        categoryLink: '',
+        categoryName: 'Furniture',
+        
+    },
+        {
+        id: 1,
+        imageUrl:'https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+        imageAlt: 'a living room with furniture',
+        categoryLink: '',
+        categoryName: 'Furniture',
+        
+    },
+]
