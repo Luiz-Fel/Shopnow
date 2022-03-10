@@ -7,7 +7,9 @@ export default function HomePageCarousel() {
 
 
     return(
-        <Carousel>
+        <Carousel style={{
+            zIndex: 0,
+        }}>
             <CarouselItem>
                 <Image src={control} alt="Controles de videogame playstation" />
 
