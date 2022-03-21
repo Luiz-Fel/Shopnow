@@ -1,31 +1,29 @@
 import Link from "next/link";
+import { AiFillTag } from "react-icons/ai";
 import ReactModal from "react-modal";
+import { showProps } from "..";
 import styles from "./styles.module.scss";
-
-interface showProps {
-  eletronics: boolean;
-  computers: boolean;
-  homeAndKitchen: boolean;
-  tools: boolean;
-  books: boolean;
-}
-
-interface contentProps {
-  title: string;
-  contentLinks: {
-    name: string;
-    url: string;
-  }[];
-}
-
-export function NavBarModal(
+interface NavBarModalProps {
   show: showProps,
+  content: contentProps[],
   handleClose: () => void,
-  content: contentProps[]
-) {
+  name: string,
+}
+interface contentProps {
+
+
+    title: string;
+    contentLinks: {
+      name: string;
+      url: string;
+    }[];
+}
+
+export function NavBarModal({show, content, handleClose, name} : NavBarModalProps) {
   return (
     <ReactModal
-      isOpen={show.eletronics}
+      //isOpen={show[name]}
+      isOpen={true}
       style={{
         overlay: {
           position: "absolute",
@@ -37,7 +35,7 @@ export function NavBarModal(
         },
         content: {
           position: "absolute",
-          top: "128px",
+          top: "120px",
           left: "0px",
           right: "0px",
           bottom: "40px",
@@ -51,27 +49,33 @@ export function NavBarModal(
         },
       }}
     >
-      <div onMouseLeave={handleClose} className={styles.modal}>
-        {content.map((current) => {
-          return (
+    
+      <div onMouseLeave={handleClose}  className={styles.modal}>
+          <div className={styles.links}>
 
-            <>
-              <h3>{current.title}</h3>
-              {
+          {content.map((curr) => {
+            return(
+              <div className={styles.linkColumn}>
+                <div className={styles.linkTitleSection}>
+                  <AiFillTag />
+                  <h3 className={styles.linkTitle}>{curr.title}</h3>
+                </div>
+                {curr.contentLinks.map((contentLink) => {
+                  return(
+                    <Link href={contentLink.url}>
+                      <a className={styles.link}>
+                        {contentLink.name}
+                      </a>
+                    </Link>
+                  )
+                })}
+              </div>
+            )
+          })}
+        </div>
+        <div className={styles.others}>
 
-              current.contentLinks.map((link) => {
-                return (
-                  <Link href={link.url}>
-                    <a>{link.name}</a>
-                  </Link>
-                );
-              })
-              
-              }
-            </>
-
-          );
-        })}
+        </div>
       </div>
     </ReactModal>
   );

@@ -1,22 +1,23 @@
 import { useState } from "react";
 import { Button, Container, Nav, Navbar, NavDropdown,  } from "react-bootstrap";
 import { AiOutlineDown } from "react-icons/ai"
+import { NavBarModal } from "./NavBarModal";
 import styles from './styles.module.scss'
 
-interface showProps {
+export interface showProps {
     eletronics: boolean,
     computers: boolean,
     homeAndKitchen: boolean,
-    tools: boolean,
+    sports: boolean,
     books: boolean,
 }
 
 export function NavBar() {
-    const [show, setShow] = useState({
+    const [show, setShow] = useState<showProps>({
         eletronics: false,
         computers: false,
         homeAndKitchen: false,
-        tools: false,
+        sports: false,
         books: false,
     })
 
@@ -25,7 +26,7 @@ export function NavBar() {
             eletronics: false,
             computers: false,
             homeAndKitchen: false,
-            tools: false,
+            sports: false,
             books: false,
         }
         setShow(close)
@@ -39,7 +40,7 @@ export function NavBar() {
             eletronics: false,
             computers: false,
             homeAndKitchen: false,
-            tools: false,
+            sports: false,
             books: false,
         }
 
@@ -73,7 +74,7 @@ export function NavBar() {
             case 'tools':
                 setShow({
                     ...show,
-                    tools: true,
+                    sports: true,
                 })
                 break;
 
@@ -89,16 +90,18 @@ export function NavBar() {
         }
     }
 
+
     return(
        <>
-       <div>
+       <div onMouseLeave={() => handleClose()} >
 
         <Navbar className={styles.navBar}>
             <Container>
                 <Navbar.Collapse className="d-flex justify-content-between">
-                    <Nav >
+                    <Nav  >
                             <Nav.Link href="" className="text-gray-900"
                             onMouseOver={() => handleShow('eletronics')}
+                            style={{zIndex : 2}}
                             >
                                 Eletronics <AiOutlineDown size="0.8rem" color="black" /></Nav.Link>
                             <Nav.Link href=""  
@@ -129,9 +132,106 @@ export function NavBar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-           
             
+        <NavBarModal 
+        name='eletronics'
+        show={show} 
+        content={navBarContent.eletronics} 
+        handleClose={() => handleClose()}
+        />
+
+        <NavBarModal 
+        name='computers'
+        show={show} 
+        content={navBarContent.computers} 
+        handleClose={() => handleClose()} />
+
+        <NavBarModal 
+        name='homeAndKitchen'
+        show={show} 
+        content={navBarContent.homeAndKitchen} 
+        handleClose={() => handleClose()} />
+
+        <NavBarModal 
+        name='sports'
+        show={show} 
+        content={navBarContent.sports} 
+        handleClose={() => handleClose()} />
+        
+        <NavBarModal 
+        name='books'
+        show={show} 
+        content={navBarContent.books} 
+        handleClose={() => handleClose()} />
        </div>
+          
        </>
     )
+}
+
+
+const navBarContent= {
+    eletronics: [
+        {
+
+            title: 'Cellphones',
+            contentLinks: [
+                {
+                    name: 'test',
+                    url: '/'
+                }
+            ]
+        }
+    ],
+    computers: [
+        {
+
+            title: 'Laptops',
+            contentLinks: [
+                {
+                    name: 'test',
+                    url: '/'
+                }
+            ]
+        }
+    ],
+    homeAndKitchen: [
+        {
+
+            title: 'Ovens',
+            contentLinks: [
+                {
+                    name: 'test',
+                    url: '/'
+                }
+            ]
+        }
+    ],
+    sports: [
+        {
+
+            title: 'Cloth',
+            contentLinks: [
+                {
+                    name: 'test',
+                    url: '/'
+                }
+            ]
+        }
+    ],
+    books: [
+        {
+
+            title: 'Fantasy',
+            contentLinks: [
+                {
+                    name: 'test',
+                    url: '/'
+                }
+            ]
+        }
+    ],
+
+
+
 }
