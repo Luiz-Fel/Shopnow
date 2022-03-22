@@ -46,16 +46,17 @@ export function NavBarModal({show, content, handleClose, name, others} : NavBarM
           backgroundColor: "rgba(0, 0, 0, 0)",
         },
         content: {
+          backgroundColor: "#f6f8fb",
           position: "absolute",
-          top: "120px",
+          top: "125px",
           left: "0px",
           right: "0px",
-          bottom: "150px",
-          border: "1px solid #851919",
+          bottom: "350px",
+          border: "1px solid trasparent",
           background: "#fff",
           overflow: "auto",
           WebkitOverflowScrolling: "touch",
-          borderRadius: "4px",
+          borderRadius: "0px 0px 8px 8px",
           outline: "none",
           padding: "0px",
         },
@@ -89,6 +90,8 @@ export function NavBarModal({show, content, handleClose, name, others} : NavBarM
           {
           //<img src={others.saleBanner.src} />
           }
+          <div className={styles.navBarScroll}>
+
           {others.navBarScroll.map((item) => {
             return(
               <Link href={""}>
@@ -101,6 +104,7 @@ export function NavBarModal({show, content, handleClose, name, others} : NavBarM
               </Link>
             )
           })}
+          </div>
         </div>
       <Link href={'/'}>
           <a className={styles.viewAllLink}>

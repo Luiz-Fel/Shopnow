@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Container, Nav, Navbar, NavDropdown,  } from "react-bootstrap";
-import { AiOutlineDown } from "react-icons/ai"
+import { AiOutlineDown, AiOutlineUser } from "react-icons/ai"
 import { NavBarModal } from "./NavBarModal";
 import styles from './styles.module.scss'
 import sample from '../../../../public/images/sample.png'
@@ -129,7 +129,12 @@ export function NavBar() {
                         
                     </Nav>
                     <Nav>
-                        <Nav.Link href="">Account</Nav.Link>
+                        <Nav.Link href="">
+                            <div className={styles.login}>
+                                <AiOutlineUser />
+                                <p style={{color: '#1071FF'}}>Login</p> 
+                            </div>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -264,7 +269,7 @@ const navBarContent= {
             title: 'Laptops',
             contentLinks: [
                 {
-                    name: 'test',
+                    name: 'Promotional text sample',
                     url: '/'
                 }
             ]
@@ -276,7 +281,7 @@ const navBarContent= {
             title: 'Ovens',
             contentLinks: [
                 {
-                    name: 'test',
+                    name: 'Promotional text sample',
                     url: '/'
                 }
             ]
@@ -288,7 +293,7 @@ const navBarContent= {
             title: 'Cloth',
             contentLinks: [
                 {
-                    name: 'test',
+                    name: 'Promotional text sample',
                     url: '/'
                 }
             ]
@@ -300,7 +305,7 @@ const navBarContent= {
             title: 'Fantasy',
             contentLinks: [
                 {
-                    name: 'test',
+                    name: 'Promotional text sample',
                     url: '/'
                 }
             ]
@@ -314,27 +319,27 @@ const navBarContent= {
         },
         navBarScroll: [
         {
-            name: 'test',
+            name: 'Promotional text sample',
             sale: 20,
             imageUrl:   sample,
         },
         {
-            name: 'test',
+            name: 'Promotional text sample',
             sale: 20,
             imageUrl: sample,
         },
         {
-            name: 'test',
+            name: 'Promotional text sample',
             sale: 20,
             imageUrl: sample,
         },
         {
-            name: 'test',
+            name: 'Promotional text sample',
             sale: 20,
             imageUrl: sample,
         },
         {
-            name: 'test',
+            name: 'Promotional text sample',
             sale: 20,
             imageUrl: sample,
         },

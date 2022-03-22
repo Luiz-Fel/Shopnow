@@ -44,3 +44,61 @@
     position: absolute;
     top: 400px;
 }
+
+.others {
+    margin-left: auto;
+}
+
+.promotialCard {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--blue-main);
+    border-radius: 32px;
+    gap: 0.5rem;
+    width: 18.8125rem;
+    img {
+        border-radius: 32px;
+
+    }
+    p {
+        font-weight: 600;
+        margin: 0;
+        max-width: 225px;
+    }
+    span {
+        color: var(--orange-pumpkin);
+    }
+}
+
+.navBarScroll {
+    overflow: auto;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-right: 2.5rem;
+
+
+
+    /* width */
+    &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 16px;
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--gray-light); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-spanish); 
+  }
+}
