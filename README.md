@@ -15,10 +15,10 @@
 - [ ] Create Product Page
 - [ ] Create Products Section Page
 - [ ] Create Header Section(WIP)
-- [ ] Create Products Section
+- [x] Create Products Section
 - [x] Create Footer Section
-- [ ] Create Main Section
-- [ ] Create Sales Section 
+- [x] Create Main Section
+- [x] Create Sales Section 
 - [ ] Create Cart 
 - [ ] Integrate Redux with Cart
 - [ ] Create Social Login

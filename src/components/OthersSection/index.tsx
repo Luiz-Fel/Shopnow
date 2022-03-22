@@ -23,8 +23,10 @@ export function OthersSection() {
                     <Link href={""}>
                         <a>
                             <div className={styles.newComponent}>
+                            <div className={styles.textSection}>
 
                                 <p className={styles.text}>New furniture bundles!</p>
+                            </div>
                                 <Image src={furnitune}  width={204} height={239} />
                             </div>
                         </a>
@@ -32,7 +34,9 @@ export function OthersSection() {
                     <Link href={""}>
                         <a>
                             <div className={styles.newComponent}>
-                                <p className={styles.text}>Check out the <br /> new kitchen section</p>
+                                <div className={styles.textSection}>
+                                    <p className={styles.text}>Check out the <br /> new kitchen section</p>
+                                </div>
                                 <Image src={kitchen} width={204} height={252.9} />
                             </div>
                         </a>
@@ -40,8 +44,11 @@ export function OthersSection() {
                     <Link href={""}>
                         <a>
                             <div className={styles.newComponent}>
-                                <p className={styles.text}>New iPhone <br /> now available!</p>
-                                <Image src={iphone} width={204} height={252.9} />
+                                <div className={styles.textSection}>
+                                    <p className={styles.text}>New iPhone <br /> now available!</p>
+                                </div>
+                            
+                                <Image src={iphone}  />
                             </div>
                         </a>
                     </Link>

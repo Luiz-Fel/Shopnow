@@ -80,8 +80,8 @@ export function BrandsSection() {
             <SwiperSlide className={styles.swiperSlide}>
                     <Link href={''}>
                             <a>
-                        <img src={'https://logodownload.org/wp-content/uploads/2014/07/adidas-logo.png'} style={{
-                            width: '6rem', 
+                        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Black%2BDecker_Logo.svg/2560px-Black%2BDecker_Logo.svg.png'} style={{
+                            width: '6.5rem', 
                         }}/>
                     </a>
                     </Link>
