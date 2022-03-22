@@ -1,13 +1,26 @@
 import Link from "next/link";
-import { AiFillTag } from "react-icons/ai";
+import { AiFillTag, AiOutlineArrowRight } from "react-icons/ai";
 import ReactModal from "react-modal";
 import { showProps } from "..";
 import styles from "./styles.module.scss";
+import Image from 'next/image'
+
 interface NavBarModalProps {
   show: showProps,
   content: contentProps[],
   handleClose: () => void,
   name: string,
+  others: {
+    saleBanner: {
+      url: string,
+      src: StaticImageData,
+    }
+    navBarScroll: {
+      name: string,
+      sale: number,
+      imageUrl: StaticImageData,
+    }[]
+  }
 }
 interface contentProps {
 
@@ -19,11 +32,10 @@ interface contentProps {
     }[];
 }
 
-export function NavBarModal({show, content, handleClose, name} : NavBarModalProps) {
+export function NavBarModal({show, content, handleClose, name, others} : NavBarModalProps) {
   return (
     <ReactModal
-      //isOpen={show[name]}
-      isOpen={true}
+      isOpen={show[name]}
       style={{
         overlay: {
           position: "absolute",
@@ -38,7 +50,7 @@ export function NavBarModal({show, content, handleClose, name} : NavBarModalProp
           top: "120px",
           left: "0px",
           right: "0px",
-          bottom: "40px",
+          bottom: "150px",
           border: "1px solid #851919",
           background: "#fff",
           overflow: "auto",
@@ -51,13 +63,13 @@ export function NavBarModal({show, content, handleClose, name} : NavBarModalProp
     >
     
       <div onMouseLeave={handleClose}  className={styles.modal}>
-          <div className={styles.links}>
+          <div className={styles.linksSection}>
 
           {content.map((curr) => {
             return(
               <div className={styles.linkColumn}>
                 <div className={styles.linkTitleSection}>
-                  <AiFillTag />
+                  <AiFillTag size={"1.5rem"} color={'#1071FF'}/>
                   <h3 className={styles.linkTitle}>{curr.title}</h3>
                 </div>
                 {curr.contentLinks.map((contentLink) => {
@@ -74,8 +86,28 @@ export function NavBarModal({show, content, handleClose, name} : NavBarModalProp
           })}
         </div>
         <div className={styles.others}>
-
+          {
+          //<img src={others.saleBanner.src} />
+          }
+          {others.navBarScroll.map((item) => {
+            return(
+              <Link href={""}>
+                <a>
+                  <div className={styles.promotialCard}>
+                    <Image src={item.imageUrl}  width={40} height={40}/>
+                    <p>{item.name} <span> {item.sale + '% off'}</span> </p>
+                  </div>
+                </a>
+              </Link>
+            )
+          })}
         </div>
+      <Link href={'/'}>
+          <a className={styles.viewAllLink}>
+            View all markets
+            <AiOutlineArrowRight  color={'#1071FF'}/>
+          </a>
+      </Link>
       </div>
     </ReactModal>
   );

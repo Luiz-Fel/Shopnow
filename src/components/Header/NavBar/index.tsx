@@ -3,6 +3,8 @@ import { Button, Container, Nav, Navbar, NavDropdown,  } from "react-bootstrap";
 import { AiOutlineDown } from "react-icons/ai"
 import { NavBarModal } from "./NavBarModal";
 import styles from './styles.module.scss'
+import sample from '../../../../public/images/sample.png'
+
 
 export interface showProps {
     eletronics: boolean,
@@ -14,7 +16,7 @@ export interface showProps {
 
 export function NavBar() {
     const [show, setShow] = useState<showProps>({
-        eletronics: false,
+        eletronics: true,
         computers: false,
         homeAndKitchen: false,
         sports: false,
@@ -49,16 +51,15 @@ export function NavBar() {
         switch (navSection) {
             case 'eletronics':
                 setShow({
-                    ...show,
+                    ...close,
                     eletronics: true,
                 })
 
                 break;
 
             case 'computers':
-                handleClose()
                 setShow({
-                    ...show,
+                    ...close,
                     computers: true,
                 })
 
@@ -66,28 +67,29 @@ export function NavBar() {
 
             case 'homeAndKitchen':
                 setShow({
-                    ...show,
+                    ...close,
                     homeAndKitchen: true,
                 })
                 break;
 
             case 'tools':
                 setShow({
-                    ...show,
+                    ...close,
                     sports: true,
                 })
                 break;
 
             case 'books':
                 setShow({
-                    ...show,
+                    ...close,
                     books: true,
                 })
                 break;
                                     
             default:
                 break;
-        }
+            }
+            console.log(show)
     }
 
 
@@ -134,35 +136,39 @@ export function NavBar() {
         </Navbar>
             
         <NavBarModal 
-        name='eletronics'
-        show={show} 
-        content={navBarContent.eletronics} 
-        handleClose={() => handleClose()}
-        />
+                    name='eletronics'
+                    show={show}
+                    content={navBarContent.eletronics}
+                    handleClose={() => handleClose()} 
+                    others={navBarContent.others} />
 
         <NavBarModal 
-        name='computers'
-        show={show} 
-        content={navBarContent.computers} 
-        handleClose={() => handleClose()} />
+                    name='computers'
+                    show={show}
+                    content={navBarContent.computers}
+                    handleClose={() => handleClose()} 
+                    others={navBarContent.others} />
 
         <NavBarModal 
-        name='homeAndKitchen'
-        show={show} 
-        content={navBarContent.homeAndKitchen} 
-        handleClose={() => handleClose()} />
+                    name='homeAndKitchen'
+                    show={show}
+                    content={navBarContent.homeAndKitchen}
+                    handleClose={() => handleClose()} 
+                    others={navBarContent.others} />
 
         <NavBarModal 
-        name='sports'
-        show={show} 
-        content={navBarContent.sports} 
-        handleClose={() => handleClose()} />
+                    name='sports'
+                    show={show}
+                    content={navBarContent.sports}
+                    handleClose={() => handleClose()} 
+                    others={navBarContent.others} />
         
         <NavBarModal 
-        name='books'
-        show={show} 
-        content={navBarContent.books} 
-        handleClose={() => handleClose()} />
+                    name='books'
+                    show={show}
+                    content={navBarContent.books}
+                    handleClose={() => handleClose()} 
+                    others={navBarContent.others} />
        </div>
           
        </>
@@ -174,14 +180,83 @@ const navBarContent= {
     eletronics: [
         {
 
-            title: 'Cellphones',
+            title: 'Category title',
             contentLinks: [
                 {
-                    name: 'test',
+                    name: 'category name',
                     url: '/'
-                }
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                
             ]
-        }
+        },
+        {
+            title: 'Category title',
+            contentLinks: [
+                {
+                    name: 'category name',
+                    url: '/',
+                },
+                {
+                    name: 'category name',
+                    url: '/',
+                },
+                {
+                    name: 'category name',
+                    url: '/',
+                },
+            ]
+        },
+        {
+
+            title: 'Category title',
+            contentLinks: [
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                {
+                    name: 'category name',
+                    url: '/'
+                },
+                
+            ]
+        },
     ],
     computers: [
         {
@@ -232,6 +307,38 @@ const navBarContent= {
         }
     ],
 
-
+    others: {
+        saleBanner: {
+            url: "",
+            src: sample
+        },
+        navBarScroll: [
+        {
+            name: 'test',
+            sale: 20,
+            imageUrl:   sample,
+        },
+        {
+            name: 'test',
+            sale: 20,
+            imageUrl: sample,
+        },
+        {
+            name: 'test',
+            sale: 20,
+            imageUrl: sample,
+        },
+        {
+            name: 'test',
+            sale: 20,
+            imageUrl: sample,
+        },
+        {
+            name: 'test',
+            sale: 20,
+            imageUrl: sample,
+        },
+    ]
+    }
 
 }
