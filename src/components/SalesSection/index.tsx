@@ -10,7 +10,7 @@ export function SalesSection() {
     <>
         <TitleSection title="Today's sales" link='See all sales' url=''  />
         <div className={styles.SalesSection}>
-            {sales.map(({id, stock, title, salePrice,  price, discount, imageUrl}) => {
+            {sales.slice(0,4).map(({id, stock, title, salePrice,  price, discount, imageUrl}) => {
                 return(
                     <SaleProduct
                     key={id}

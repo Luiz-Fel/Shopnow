@@ -19,7 +19,7 @@ export function Product({id, stock, title, isSales, price, salePrice, imageUrl, 
 
      
         return(
-        <Card style={{ width: '15rem' }}>
+        <Card style={{ width: '15rem'  }}>
         <Card.Img variant="top" src={imageUrl} style={{ width: '12rem',
         padding: '1rem', 
         marginRight: 'auto',

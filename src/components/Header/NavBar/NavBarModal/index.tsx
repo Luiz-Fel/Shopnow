@@ -51,7 +51,7 @@ export function NavBarModal({show, content, handleClose, name, others} : NavBarM
           top: "125px",
           left: "0px",
           right: "0px",
-          bottom: "350px",
+          bottom: "200px",
           border: "1px solid trasparent",
           background: "#fff",
           overflow: "auto",

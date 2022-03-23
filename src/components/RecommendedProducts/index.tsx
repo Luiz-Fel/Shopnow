@@ -8,6 +8,7 @@ import { Product } from '../Product';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Link from 'next/link';
 import { TitleSection } from '../TitleSection';
+import { sales } from '../../constants/constants';
 
 export function RecommendedProducts() {
     return(
@@ -21,15 +22,22 @@ export function RecommendedProducts() {
             spaceBetween={100}
             navigation={true}
             >
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
-                <SwiperSlide><Product id={0} stock={0} title={''} isSales={false} price={0} salePrice={0} imageUrl={''} /></SwiperSlide>
+                {sales.map((product) => {
+                    return(
+                        <SwiperSlide key={product.id}>
+                        
+                        <Product
+                        id={product.id} 
+                        stock={product.stock} 
+                        title={product.title} 
+                        isSales={product.isSales} 
+                        price={product.price} 
+                        salePrice={product.salePrice} 
+                        imageUrl={product.imageUrl} />
+                            
+                        </SwiperSlide>
+                    )
+                })}
 
             </Swiper>
         </div>
