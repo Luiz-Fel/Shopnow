@@ -61,17 +61,6 @@ export const sales = [
         description: "Take your weeknight dinner game to the next level with the Chefman TurboFry Touch Air Fryer. With an XL 8-qt capacity, entire meals for the whole family can be ready in no time. Plus, the power of rapid-air technology cooks food faster and healthier than ever – Use little to no oil and achieve the same crispy, fried finish you love. Plate restaurant favorites from mozzarella sticks to chips, chicken tenders to pizza, and much more – no deep frying needed. Featuring a large digital display with capacitive touch control on the top of the fryer, an extra-large viewing window, and a bright interior light, its simple to control every meal. 4 precise cooking presets, the LED shake reminder, and the integrated timer were designed to help you achieve perfect results every time. When the cooking is done, simply place the dishwasher-safe fry basket on the top rack for the easiest cleanup ever."
     },
     {
-        id: 3,
-        stock: 9,
-        title: 'Pioneer - 50" Class LED 4K UHD Smart Fire TV',
-        isSale: true,
-        price: 419.99,
-        discount: 0.25,
-        salePrice: 305.99,
-        imageUrl: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462308_sd.jpg;maxHeight=640;maxWidth=550",
-        description: 'Prepare yourself for an experience that will change the way you view entertainment. The Pioneer PN50951-22U 50" Class LED 4K UHD Smart Fire TV is equipped with 4K Ultra HD and High Dynamic Range, delivering stunning results that enhance your favorite TV shows, movies, sports and more. Dolby Vision boosts your viewing experience by delivering improved picture quality with detailed images.'
-    },
-    {
         id: 4,
         stock: 16,
         title: "Playstation 4 slim Certified Refurbished 1TB Console - Black",
